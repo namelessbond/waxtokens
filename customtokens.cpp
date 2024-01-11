@@ -30,7 +30,7 @@ class customtokens_contract : public eosio::contract {
       eosio_assert(owneracc.balance.amount > 0, "a bal must exist");
     }
 
-    // Find if we need to replace by identifier.
+    // Find if we need to replace by identifier..
     auto target_itr = tokens.find(uuid);
     if (target_itr != tokens.end()) {
       require_auth(target_itr->owner);  // Remember to check that owner matches!
@@ -68,7 +68,7 @@ class customtokens_contract : public eosio::contract {
 
 
  private:
-  // @abi table tokens i64
+  // @abi table tokens i64.
   struct token {
     uint64_t     uuid;
     account_name owner;
@@ -81,7 +81,7 @@ class customtokens_contract : public eosio::contract {
   typedef eosio::multi_index<N(tokens), token> tokens_table;
   tokens_table tokens;
 
-  // This is just to help the account lookup, and is not exposed.
+  // This is just to help the account lookup, and is not exposed..
   struct account {
     asset balance;
     auto  primary_key() const {  return balance.symbol.name();  }
