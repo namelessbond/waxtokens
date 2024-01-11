@@ -16,7 +16,7 @@ cleos push action customtokens set '[unique_id, your_account, contract_account, 
 
 **Parameter List**:
 
-- **Unique ID**: `1` below, this must be a unique number in the table.
+- **Unique ID**: `0` below, this must be a unique number in the table.
 - **Record Owner**: `solveforanyx` below, the account that manages this table record.
 - **Contract Account**: `eosio.token` below, the account which holds the smart contract for the token.
 - **Asset**: `0.0000 EOS` below, must be `0` and have the correct amount of decimal places (`.0000`), with the correct symbol (`EOS`).
