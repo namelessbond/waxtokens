@@ -6,7 +6,7 @@
       "name": "token",
       "base": "",
       "fields": [{
-          "name": "uuids",
+          "name": "uuid",
           "type": "uint64"
         },{
           "name": "owner",
